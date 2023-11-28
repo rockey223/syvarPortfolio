@@ -5,41 +5,55 @@
   height: 45vw;
 
   .imageContainer {
-    height: 10%;
-    &:nth-of-type(1) {
-      width: 66.66%;
+    height: 90%;
+    width: 50%;
+    background-color: #21232d;
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      background: #21232d;
+      inset: 2px;
+      border-radius: 5px;
     }
-    &:nth-of-type(2) {
-      width: 33.33%;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 140%;
+      height: 160%;
     }
+    &:hover::before {
+      background: linear-gradient(
+        224deg,
+        var(--yellow) 1.36%,
+        rgba(255, 255, 255, 0) 41.95%,
+        rgba(217, 217, 217, 0) 58.72%,
+        var(--yellow) 100.99%
+      );
+      animation: rotate 4s linear infinite;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .content{
+      z-index: 2;
 
-    .stretchyWrapper {
-      // padding-bottom: 30% ;
-      position: relative;
-      display: flex;
-      margin: auto;
-      align-items: center;
-      // width: 100%;
-      // height: 20%;
-      border-radius: 20px;
-      border: 2px;
-      border-style: solid;
-      // border-top: 2px solid #ffb830;
-      // border-left: 2px solid #ffb830;
-      // border-image: linear-gradient(to bottom, #ffb830, rgba(0,0,0,0)) 1;
-      // background: #21232d;
-      justify-content: center;
-      position: relative;
-      background: linear-gradient(#21232d, #21232d) padding-box,
-    linear-gradient(to bottom, #ffb830, rgba(0,0,0,0)) border-box;
-    border: 2px solid transparent;
       .number {
         position: absolute;
         top: 50px;
         left: 50px;
-
         color: var(--yellow);
-
+  
         /* Work Sans/26px: Medium */
         font-family: Work Sans;
         font-size: 26px;
@@ -47,23 +61,28 @@
         font-weight: 500;
         line-height: normal;
       }
-      .meroContainer {
+      .text-content {
+       
+  
         display: flex;
         width: 100%;
         gap: 10px;
         // align-items: center;
         justify-content: center;
+        align-items: center;
         height: 70%;
         margin: 20% 0;
+        padding: 0 20px;
         .left {
-          width: 70%;
+          width: 40%;
+          height: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
           img {
-            height: 80%;
-            width: 80%;
-            object-fit: contain;
+            height: 90%;
+            width: 90%;
+            object-fit: cover;
           }
         }
         .right {
@@ -73,7 +92,7 @@
           width: 60%;
           .title {
             color: var(--Brand-Color-Yellow, #ffb830);
-
+  
             /* Work Sans/26px: Medium */
             font-family: Work Sans;
             font-size: 26px;
@@ -81,7 +100,7 @@
             font-weight: 500;
             line-height: normal;
           }
-
+  
           p {
             height: auto;
             width: 75%;
@@ -94,17 +113,6 @@
             letter-spacing: 0.08px;
           }
         }
-      }
-    }
-  }
-
-  &:nth-child(even) {
-    .imageContainer {
-      &:nth-of-type(1) {
-        width: 33.33%;
-      }
-      &:nth-of-type(2) {
-        width: 66.66%;
       }
     }
   }

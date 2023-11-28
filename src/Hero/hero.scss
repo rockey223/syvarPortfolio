@@ -1,0 +1,34 @@
+.main{
+    height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afa18f;
+    font-size: 64px;
+    line-height: 66px;
+    
+    p{
+          // background-color: #ec4e39;
+        width: 1000px;
+   height: 100%;
+        padding:40px;
+      }
+      span{
+        color: #ec4e39;
+      }
+    
+  
+    .mask{
+      mask-image: url(https://i.postimg.cc/s23fWGn8/mask.png);
+      mask-repeat: no-repeat;
+      mask-size: 40px;
+      -webkit-mask-image: url(https://i.postimg.cc/s23fWGn8/mask.png);
+      -webkit-mask-repeat: no-repeat;
+      
+      -webkit-mask-size: 40px;
+      background: #ec4e39;
+      position: fixed;
+      color: black;
+    }
+  }

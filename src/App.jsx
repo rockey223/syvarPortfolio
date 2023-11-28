@@ -4,6 +4,7 @@ import "./App.css";
 import Services from "./Services/Services";
 
 import { motion } from "framer-motion";
+import Hero from "./Hero/Hero";
 function App() {
   const [mPosition, setMPosition] = useState({
     x: 0,
@@ -12,6 +13,8 @@ function App() {
 
   useEffect(() => {
     const mouseMove = (e) => {
+      // console.log(e.clientX);
+      // console.log(e.clientY);
       setMPosition({
         x: e.clientX,
         y: e.clientY,
@@ -22,23 +25,38 @@ function App() {
       window.removeEventListener("mousemove", mouseMove);
     };
   }, []);
-
+  const [isHovered, setIsHovered] = useState(false);
+  const size = isHovered ? 400 : 40;
   const MouseVariants = {
     default: {
-      x: mPosition.x - 16,
+      x: mPosition.x - 20,
       y: mPosition.y - 16,
-      
+
+     
     },
+    hoveredHero:{
+      x: mPosition.x - 20,
+      y: mPosition.y - 16,
+  // scale: size,
+
+    }
   };
   return (
     <>
-      {/* <Hero /> */}
+    <motion.div
+          className="mouseCursor"
+          variants={MouseVariants}
+          animate= {isHovered ? 'hoveredHero' : 'default'}
+        />
+    
+      {/* <Hero
+        mouse={mPosition}
+        setIsHovered={setIsHovered}
+        isHovered={isHovered}
+        size={size}
+      /> */}
+      
       <Services mouse={mPosition} />
-      <motion.div
-        className="mouseCursor"
-        variants={MouseVariants}
-        animate="default"
-      />
     </>
   );
 }
