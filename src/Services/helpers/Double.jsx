@@ -42,14 +42,42 @@ export default function Double({ projects, mouse }) {
 
   return (
     <div className="double">
-      <motion.div
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          rotateY,
-          rotateX,
-          transformStyle: "preserve-3d",
-        }}
+      <div
+        
+        className="imageContainer"
+      >
+        <div
+          className="content"
+          
+        >
+          <div className="content-top">
+            <div
+              className="number"
+              
+            >
+              {projects[0].id}
+            </div>
+            <div className="title">{projects[0].title}</div>
+          </div>
+          <div
+            className="text-content"
+            style={{
+              transform: "translateZ(75px)",
+            }}
+          >
+            <div className="left">
+              <img
+                src={"https://i.postimg.cc/tR5fcG4g/unsplash-e-Ypc-LDXHVb0.png"}
+                alt="image"
+              />
+            </div>
+            <div className="right">
+              <p>{projects[0].content}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
         className="imageContainer"
       >
         <div
@@ -59,13 +87,16 @@ export default function Double({ projects, mouse }) {
             transformStyle: "preserve-3d",
           }}
         >
-          <div
-            className="number"
-            style={{
-              transform: "translateZ(75px)",
-            }}
-          >
-            {projects[0].id}
+          <div className="content-top">
+            <div
+              className="number"
+              style={{
+                transform: "translateZ(75px)",
+              }}
+            >
+              {projects[0].id}
+            </div>
+            <div className="title">{projects[0].title}</div>
           </div>
           <div
             className="text-content"
@@ -80,52 +111,11 @@ export default function Double({ projects, mouse }) {
               />
             </div>
             <div className="right">
-              <div className="title">{projects[0].title}</div>
               <p>{projects[0].content}</p>
             </div>
           </div>
         </div>
-      </motion.div>
-      <motion.div
-        // onMouseMove={handleMouseMove}
-        // onMouseLeave={handleMouseLeave}
-        // style={{
-        //   rotateY,
-        //   rotateX,
-        //   transformStyle: "preserve-3d",
-        // }}
-        className="imageContainer"
-      >
-        <div
-          className="content"
-          // style={{
-          //   transform: "translateZ(75px)",
-          //   // transformStyle: "preserve-3d",
-          // }}
-        >
-          <div
-            className="number"
-            
-          >
-            {projects[1].id}
-          </div>
-          <div
-            className="text-content"
-            
-          >
-            <div className="left">
-              <img
-                src={"https://i.postimg.cc/tR5fcG4g/unsplash-e-Ypc-LDXHVb0.png"}
-                alt="image"
-              />
-            </div>
-            <div className="right">
-              <div className="title">{projects[1].title}</div>
-              <p>{projects[1].content}</p>
-            </div>
-          </div>
-        </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

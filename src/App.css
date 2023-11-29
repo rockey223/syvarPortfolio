@@ -6,6 +6,7 @@
   --blue: #3db2ff;
   --white: #ffffff;
   --black: #000000;
+  --light-black: #21232D;
   --work-sans: 'Work Sans', sans-serif;
 }
 *{
@@ -28,4 +29,5 @@ body{
   left: 0;
   z-index: 99;
   pointer-events: none;
+  mix-blend-mode: difference;
 }
