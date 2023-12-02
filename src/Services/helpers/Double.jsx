@@ -42,21 +42,10 @@ export default function Double({ projects, mouse }) {
 
   return (
     <div className="double">
-      <div
-        
-        className="imageContainer"
-      >
-        <div
-          className="content"
-          
-        >
+      <div className="imageContainer">
+        <div className="content">
           <div className="content-top">
-            <div
-              className="number"
-              
-            >
-              {projects[0].id}
-            </div>
+            <div className="number">{projects[0].id}</div>
             <div className="title">{projects[0].title}</div>
           </div>
           <div
@@ -77,9 +66,7 @@ export default function Double({ projects, mouse }) {
           </div>
         </div>
       </div>
-      <div
-        className="imageContainer"
-      >
+      <div className="imageContainer">
         <div
           className="content"
           style={{

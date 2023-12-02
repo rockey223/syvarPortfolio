@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import "./hero.scss";
 import { motion } from "framer-motion";
-const Hero = ({ mouse, isHovered, setIsHovered, size }) => {
+const Hero = ({ mouse, isHovered, setIsHovered }) => {
   // const [isHovered, setIsHovered] = useState(false);
   // const { x, y } = MousePosition();
-
+  const size = isHovered ? 400 : 40;
+  const none = 0;
   return (
     <div className="main">
       <motion.div
         className="mask"
         animate={{
-          WebkitMaskPosition: `${mouse.x - 20}px ${mouse.y - 16}px`,
-          WebkitMaskSize: `${size}px`
+          WebkitMaskPosition: `${mouse.x - size / 2}px ${mouse.y - size / 2}px`,
+          WebkitMaskSize: `${isHovered ? size : none}px`
         }}
         transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
+        // style={{ display: isHovered ? 'block' : 'none' }}
       >
         <p
           onMouseEnter={() => {

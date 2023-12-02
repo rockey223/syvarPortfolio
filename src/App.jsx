@@ -26,16 +26,16 @@ function App() {
     };
   }, []);
   const [isHovered, setIsHovered] = useState(false);
-  const size = isHovered ? 400 : 40;
+
   const MouseVariants = {
     default: {
-      x: mPosition.x - 20,
+      x: mPosition.x - 16,
       y: mPosition.y - 16,
 
      
     },
     hoveredHero:{
-      x: mPosition.x - 20,
+      x: mPosition.x - 16,
       y: mPosition.y - 16,
   // scale: size,
 
@@ -43,18 +43,18 @@ function App() {
   };
   return (
     <>
-    <motion.div
+    {/* <motion.div
           className="mouseCursor"
           variants={MouseVariants}
           animate= {isHovered ? 'hoveredHero' : 'default'}
-        />
+        /> */}
     
-      {/* <Hero
+      <Hero
         mouse={mPosition}
         setIsHovered={setIsHovered}
         isHovered={isHovered}
-        size={size}
-      /> */}
+        
+      />
       
       <Services mouse={mPosition} />
     </>

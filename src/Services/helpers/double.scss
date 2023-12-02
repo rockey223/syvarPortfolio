@@ -1,13 +1,12 @@
 .double {
   display: flex;
   gap: 10px;
-  margin-top: 30px;
-  height: 45vw;
-
+  margin-top: 10px;
+  // height: 40vw;
   .imageContainer {
-    width: var(--service-Weight, 876px);
-    height: var(--Service-Height, 512px);
-    background-color: #21232d;
+    width: 876px;
+    height: 512px;
+    // background-color: var(--light-black);
     position: relative;
     display: flex;
     border-radius: 5px;
@@ -15,28 +14,42 @@
     align-items: center;
     overflow: hidden;
     gap: 10px;
+    // border: 2px;
+    // border: linear-gradient(to bottom var(--yellow));
+    border: 2px solid black; /* Example border with 2px width and black color */
+    background-image: linear-gradient(
+      to bottom,
+      var(--yellow),
+      transparent,
+      transparent
+    );
     &::after {
       content: "";
       position: absolute;
       background: #21232d;
-      inset: 4px;
+      inset: 2px;
       border-radius: 5px;
     }
     &::before {
       content: "";
       position: absolute;
       width: 190%;
-      height: 160%;
+      height: 165%;
+    }
+    &:hover {
+      border: none; /* Example border with 2px width and black color */
+      background-image: none;
     }
     &:hover::before {
       background: linear-gradient(
         224deg,
         var(--yellow) 1.36%,
-        rgba(255, 255, 255, 0) 41.95%,
-        rgba(217, 217, 217, 0) 58.72%,
+        rgba(255, 255, 255, 0) 43.72%,
+        rgba(217, 217, 217, 0) 56.51%,
         var(--yellow) 100.99%
       );
-      animation: rotate 8s linear infinite;
+
+      animation: rotate 2s linear infinite;
     }
     @keyframes rotate {
       from {
@@ -47,8 +60,12 @@
       }
     }
     .content {
+      margin-top: 20px;
       z-index: 2;
       position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 40px;
       .content-top {
         display: flex;
         width: 100%;
@@ -59,21 +76,21 @@
         height: 70%;
         // margin: 20% 0;
         padding: 30px 20px;
+        position: relative;
         .number {
-          width: 40%;
+          width: 45%;
           color: var(--yellow);
-
           /* Work Sans/26px: Medium */
           font-family: Work Sans;
           font-size: 26px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+          
         }
         .title {
           width: 50%;
           color: var(--Brand-Color-Yellow, #ffb830);
-
           /* Work Sans/26px: Medium */
           font-family: Work Sans;
           font-size: 26px;
@@ -88,12 +105,11 @@
         gap: 10px;
         // align-items: center;
         justify-content: center;
-        // align-items: center;
         height: 70%;
         // margin: 20% 0;
-        padding: 30px 20px;
+        padding: 30px 10px;
         .left {
-          width: 40%;
+          width: 45%;
           height: 50%;
           display: flex;
           justify-content: center;
@@ -106,10 +122,8 @@
         }
         .right {
           display: flex;
-          flex-direction: column;
-          gap: 74px;
-          width: 60%;
 
+          width: 50%;
           p {
             height: auto;
             width: 90%;
