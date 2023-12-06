@@ -3,7 +3,7 @@ import './ourServices.scss'
 const OurServices = ({item}) => {
   return (
     <div className="imageContainer">
-        <div className="topbox">asd</div>
+        <div className="topbox"/>
         <div className="content">
           <div className="content-top">
             <div className="number">{item.id}</div>

@@ -15,7 +15,7 @@
     border: 2px solid black; /* Example border with 2px width and black color */
     background-image: linear-gradient(
       to bottom,
-      var(--yellow),
+      var(--light-yellow),
       transparent,
       transparent
     );
@@ -55,11 +55,17 @@
         transform: rotate(360deg);
       }
     }
-
+&:hover .topbox{
+  display: none;
+}
     .topbox{
-      height: 20px;
-      width: 60px;
+      height: 10px;
+      width: 30px;
       background-color: var(--yellow);
+      z-index: 2;
+      position: absolute;
+      top:0;
+      left: 50px;
     }
     .content {
       margin-top: 20px;
