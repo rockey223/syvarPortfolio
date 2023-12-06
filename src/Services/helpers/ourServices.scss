@@ -1,11 +1,6 @@
-.double {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-  
-  // height: 40vw;
-  .imageContainer {
-    width: 876px;
+.imageContainer {
+    max-width: 876px;
+    width: 100%;
     height: 512px;
     // background-color: var(--light-black);
     position: relative;
@@ -83,7 +78,7 @@
         // align-items: center;
         height: 70%;
         // margin: 20% 0;
-        padding: 30px 20px;
+        padding: 0px 20px 30px 20px;
         position: relative;
         .number {
           width: 45%;
@@ -146,61 +141,59 @@
       }
     }
   }
-}
 
-@media only screen and (max-width: 800px) {
-  .double {
-    flex-direction: column;
-    width: 100%;
-    // background-color: #f1f1f1;
-    .imageContainer {
-      width: 100%;
-    }
-  }
-}
 
-@media only screen and (max-width: 550px) {
-  .double {
-    .imageContainer {
-      height: 650px;
-      .content {
-        .content-top {
-          // flex-direction: column;
-          .number {
-            width: 10%;
-          }
-          .title {
-            width: 100%;
-          }
-        }
-        .text-content {
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          .left {
-            display: flex;
-            width: 80%;
-          }
-          .right {
-            width: 90%;
-            p {
+  @media only screen and (max-width: 550px) {
+   
+    
+      .imageContainer {
+        height: 550px;
+        .content {
+          .content-top {
+            // flex-direction: column;
+            .number {
+              width: 10%;
+            }
+            .title {
               width: 100%;
+            }
+          }
+          .text-content {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .left {
+              display: flex;
+              width: 80%;
+            }
+            .right {
+              width: 90%;
+              p {
+                width: 100%;
+              }
             }
           }
         }
       }
     }
-  }
-}
+  
+  
 
-@media only screen and (max-width: 400px){
-  .double{
-    .imageContainer{
-      .content{
-        .content-top{
-          flex-direction: column;
+@media only screen and (max-width: 375px) {
+  .imageContainer{
+    .content{
+      .content-top{
+       
+        // flex-direction: column;
+        .number {
+         font-size: 18px;
+        }
+        .title {
+          font-size: 18px;
         }
       }
     }
   }
+
+
 }
