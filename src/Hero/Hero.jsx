@@ -32,10 +32,12 @@ const Hero = ({ mouse, isHovered, setIsHovered }) => {
 
       <div className="body">
         <p>
-          I'm a <span>selectively skilled</span> product designer with strong
-          focus on producing high quality & impactful digital experience.
+        Your Essence, Our Excellence: Elevating the product Experience together.
         </p>
       </div>
+      <p>
+      We sculpt dreams into digital marvels.
+      </p>
     </div>
   );
 };

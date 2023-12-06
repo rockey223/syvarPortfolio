@@ -33,20 +33,16 @@ function App() {
       y: mPosition.y - 16,
 
      
-    },
-    hoveredHero:{
-      x: mPosition.x - 16,
-      y: mPosition.y - 16,
-  // scale: size,
-
     }
+   
   };
   return (
     <>
     {/* <motion.div
           className="mouseCursor"
+          style={{display: isHovered? 'none' : 'block'}}
           variants={MouseVariants}
-          animate= {isHovered ? 'hoveredHero' : 'default'}
+          animate= 'default'
         /> */}
     
       <Hero

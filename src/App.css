@@ -20,7 +20,7 @@ body{
 }
 
 .mouseCursor{
-  background-color: var(--yellow);
+  background-color: #ec4e39;
   height: 32px;
   width: 32px;
   border-radius: 50%;
