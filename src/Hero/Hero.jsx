@@ -7,6 +7,8 @@ const Hero = ({ mouse, isHovered, setIsHovered }) => {
   const size = isHovered ? 400 : 40;
   const none = 0;
   return (
+    <div className="hero-main-container">
+
     <div className="main">
       <motion.div
         className="mask"
@@ -25,19 +27,22 @@ const Hero = ({ mouse, isHovered, setIsHovered }) => {
             setIsHovered(false);
           }}
         >
-          A visual designer - with skills that haven't been replaced by A.I
-          (yet) - making good shit only if the paycheck is equally good.
+         One of the most important pieces of the great product experience is you.
         </p>
+      <p className="tagLine">
+      A creative agency that craft a digital experience.
+      </p>
       </motion.div>
 
       <div className="body">
         <p>
         Your Essence, Our Excellence: Elevating the product Experience together.
         </p>
-      </div>
-      <p>
+      <p className="tagLine">
       We sculpt dreams into digital marvels.
       </p>
+      </div>
+    </div>
     </div>
   );
 };
