@@ -3,10 +3,11 @@ import Double from "./helpers/Double";
 import services from "./helpers/services";
 import "./services.scss";
 import OurServices from "./helpers/OurServices";
+import { Element } from "react-scroll";
 const Services = ({ mouse }) => {
   return (
     <>
-    <div className="services">
+    <Element id="Services" className="services" name="services">
 
       <div className="services-heading">
         <div className="services-left">
@@ -31,7 +32,7 @@ const Services = ({ mouse }) => {
           mouse={mouse}
         /> */}
       </div>
-    </div>
+    </Element>
     </>
   );
 };

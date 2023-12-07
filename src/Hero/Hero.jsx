@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { Element } from "react-scroll";
 const Hero = ({ mouse, isHovered, setIsHovered }) => {
   // const [isHovered, setIsHovered] = useState(false);
   // const { x, y } = MousePosition();
   const size = isHovered ? 400 : 40;
   const none = 0;
   return (
-    <div className="hero-main-container">
+    <Element name="home" className="hero-main-container">
 
     <div className="main">
       <motion.div
@@ -43,7 +44,7 @@ const Hero = ({ mouse, isHovered, setIsHovered }) => {
       </p>
       </div>
     </div>
-    </div>
+    </Element>
   );
 };
 

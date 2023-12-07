@@ -5,6 +5,7 @@ import Services from "./Services/Services";
 
 import { motion } from "framer-motion";
 import Hero from "./Hero/Hero";
+import Navbar from "./Navbar/Navbar";
 function App() {
   const [mPosition, setMPosition] = useState({
     x: 0,
@@ -44,7 +45,7 @@ function App() {
           variants={MouseVariants}
           animate= 'default'
         /> */}
-    
+    <Navbar/>
       <Hero
         mouse={mPosition}
         setIsHovered={setIsHovered}
