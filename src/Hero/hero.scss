@@ -35,9 +35,7 @@
         width: 1060px;
         padding:40px;
       }
-      span{
-        color: #ec4e39;
-      }
+      
     }
   
     .mask{
@@ -48,7 +46,7 @@
       -webkit-mask-repeat: no-repeat;
       
       -webkit-mask-size: 40px;
-      background: #ec4e39;
+      background: var(--yellow);
       position: absolute;
       color: black;
       

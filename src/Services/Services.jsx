@@ -22,7 +22,7 @@ const Services = ({ mouse }) => {
         {
           services.map((item,index)=>{
 
-            return <OurServices item={item}/>
+            return <OurServices key={index} item={item}/>
           })
         }
         {/* <Double projects={[services[0], services[1]]} mouse={mouse} />

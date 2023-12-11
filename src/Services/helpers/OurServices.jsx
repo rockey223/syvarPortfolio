@@ -2,7 +2,7 @@ import React from 'react'
 import './ourServices.scss'
 const OurServices = ({item}) => {
   return (
-    <div className="imageContainer">
+    <div className="imageContainer" >
         <div className="topbox"/>
         <div className="content">
           <div className="content-top">
