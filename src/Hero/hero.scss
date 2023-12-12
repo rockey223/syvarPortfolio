@@ -1,56 +1,55 @@
 // masking.main{
-  .hero-main-container{
-    max-width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .main{
-    height: 100vh;
-    max-width: 1440px;
-    .mask, .body{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      padding-left: 50px;
-      color: var(--white);
-      font-size: 64px;
-      font-family: var(--work-sans);
-      line-height: 66px;
-      cursor: default;
-      gap: 0;
-  
-      .tagLine{
-        // color: var(--yellow);
-        font-size: 20px;
-        margin: 0;
-        padding: 0 0 0 40px;
-      }
-      
-      p{
-        width: 1060px;
-        padding:40px;
-      }
-      
-    }
-  
-    .mask{
-      mask-image: url(../assets/mask.svg);
-      mask-repeat: no-repeat;
-      mask-size: 40px;
-      -webkit-mask-image: url(../assets/mask.svg);
-      -webkit-mask-repeat: no-repeat;
-      
-      -webkit-mask-size: 40px;
-      background: var(--yellow);
-      position: absolute;
-      color: black;
-      
-    }
-  }
+// .hero-main-container {
+//   max-width: 100%;
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+// }
+// .main {
+//   height: 100vh;
+//   max-width: 1440px;
+//   .mask,
+//   .body {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: center;
+//     padding-left: 50px;
+//     color: var(--white);
+//     font-size: 64px;
+//     font-family: var(--work-sans);
+//     line-height: 66px;
+//     cursor: default;
+//     gap: 0;
+
+//     .tagLine {
+//       // color: var(--yellow);
+//       font-size: 20px;
+//       margin: 0;
+//       padding: 0 0 0 40px;
+//     }
+
+//     p {
+//       width: 1060px;
+//       padding: 40px;
+//     }
+//   }
+
+//   .mask {
+//     mask-image: url(../assets/mask.svg);
+//     mask-repeat: no-repeat;
+//     mask-size: 40px;
+//     -webkit-mask-image: url(../assets/mask.svg);
+//     -webkit-mask-repeat: no-repeat;
+
+//     -webkit-mask-size: 40px;
+//     background: var(--yellow);
+//     position: absolute;
+//     color: black;
+//   }
+// }
 .hero-main-container {
   max-width: 100%;
   display: flex;
@@ -74,13 +73,13 @@
     color: var(--white);
     font-size: 80px;
     font-family: var(--work-sans);
-    line-height: 70px;
+    line-height: 100px;
     cursor: default;
     gap: 0;
 
     .tagLine {
       // color: var(--yellow);
-      font-size: 20px;
+      font-size: 24px;
       margin: 0;
       padding: 0 0 0 40px;
     }
