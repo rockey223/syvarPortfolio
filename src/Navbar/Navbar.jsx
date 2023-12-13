@@ -24,6 +24,7 @@ export default function Home() {
         </div>
 
         <div className="rock-header">
+          <button className="rock-start-button">Start Project</button>
           <div
             onClick={() => {
               setIsActive(!isActive);

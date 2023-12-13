@@ -1,14 +1,14 @@
 .rock-navBar {
   height: 80px;
-  background:linear-gradient(to bottom, rgba(0,0,0,1) , transparent) ;
-//   opacity: 0.rock-5;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+  //   opacity: 0.rock-5;
   display: flex;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 9999;
-//   filter: blur(20);
-backdrop-filter: blur(2px);
+  //   filter: blur(20);
+  backdrop-filter: blur(2px);
 }
 
 .rock-syvar-logo {
@@ -30,7 +30,23 @@ backdrop-filter: blur(2px);
   position: fixed;
   right: 0;
   z-index: 5;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .rock-start-button {
+    border-radius:40px;
+    border: 1px solid var(--white);
+    background: var(--white);
+    height: 59px;
+    width: 179px;
+    cursor: pointer;
+    color: #333;
+    font-family: var(--work-sans);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
   .rock-button {
     width: 80px;
     height: 80px;
