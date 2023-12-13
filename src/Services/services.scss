@@ -1,4 +1,4 @@
-.services {
+.rock-services {
   margin: 50px 0;
   display: flex;
   // flex-direction: column;
@@ -8,12 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .services-heading {
+  .rock-services-heading {
     display: flex;
     margin: 0 80px;
     justify-content: space-between;
     
-    .services-left {
+    .rock-services-left {
       width: 50%;
       color: var(--white);
       // text-align: center;
@@ -27,7 +27,7 @@
         color: var(--blue);
       }
     }
-    .services-right {
+    .rock-services-right {
       align-self: flex-end;
       width: 40%;
       color: var(--white);
@@ -40,7 +40,7 @@
     }
   }
 
-  .gallary {
+  .rock-gallary {
     margin: 90px 0px 0 0px;
     color: white;
     display: grid;
@@ -58,44 +58,44 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .services {
-    .gallary {
+  .rock-services {
+    .rock-gallary {
       grid-template-columns: 1fr;
       gap: 30px;
     }
-    .services-heading {
+    .rock-services-heading {
       flex-direction: column;
       gap: 40px;
       margin: 0 20px;
-      .services-left {
+      .rock-services-left {
         width: 100%;
         text-wrap: balance;
       }
-      .services-right {
+      .rock-services-right {
         width: 100%;
       }
     }
   }
 }
 @media only screen and (max-width: 650px) {
-  .services {
-    .services-heading {
-      .services-left {
+  .rock-services {
+    .rock-services-heading {
+      .rock-services-left {
         font-size: 54px;
       }
-      .services-right {
+      .rock-services-right {
         width: 100%;
       }
     }
   }
 }
 @media only screen and (max-width: 450px) {
-  .services {
-    .services-heading {
-      .services-left {
+  .rock-services {
+    .rock-services-heading {
+      .rock-services-left {
         font-size: 40px;
       }
-      .services-right {
+      .rock-services-right {
         width: 100%;
       }
     }

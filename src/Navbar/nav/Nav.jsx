@@ -35,9 +35,9 @@ export default function Nav() {
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
-    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className='menu'>
-       <div className='body'>
-            <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className='nav'>
+    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className='rock-menu'>
+       <div className='rock-body'>
+            <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className='rock-nav'>
                     {/* <div className='header'>
                         <p>Navigation</p>
                     </div> */}

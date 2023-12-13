@@ -8,11 +8,11 @@ const Hero = ({ mouse, isHovered, setIsHovered }) => {
   const size = isHovered ? 400 : 40;
   const none = 0;
   return (
-    <Element name="home" className="hero-main-container">
+    <Element name="home" className="rock-hero-main-container">
 
-    <div className="main">
+    <div className="rock-main">
       <motion.div
-        className="mask"
+        className="rock-mask"
         animate={{
           WebkitMaskPosition: `${mouse.x - size / 2}px ${mouse.y - size / 2}px`,
           WebkitMaskSize: `${isHovered ? size : none}px`
@@ -30,16 +30,16 @@ const Hero = ({ mouse, isHovered, setIsHovered }) => {
         >
          One of the most important pieces of the great product experience is you.
         </p>
-      <p className="tagLine">
-      A creative agency that craft a digital experience.
+      <p className="rock-tagLine">
+      We sculpt dreams into digital marvels.
       </p>
       </motion.div>
 
-      <div className="body">
+      <div className="rock-body">
         <p>
         Your Essence, Our Excellence: Elevating the product Experience together.
         </p>
-      <p className="tagLine">
+      <p className="rock-tagLine">
       We sculpt dreams into digital marvels.
       </p>
       </div>

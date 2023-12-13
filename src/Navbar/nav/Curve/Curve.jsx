@@ -23,7 +23,7 @@ export default function Index() {
   }
 
   return (
-    <svg className='svgCurve'>
+    <svg className='rock-svgCurve'>
         <motion.path variants={curve} initial="initial" animate="enter" exit="exit"></motion.path>
     </svg>
   )

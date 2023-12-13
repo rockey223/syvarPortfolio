@@ -18,19 +18,19 @@ export default function Home() {
 
   return (
     <>
-      <div className="navBar">
-        <div className="syvar-logo">
+      <div className="rock-navBar">
+        <div className="rock-syvar-logo">
           <img src={logo} alt="" />
         </div>
 
-        <div className="header">
+        <div className="rock-header">
           <div
             onClick={() => {
               setIsActive(!isActive);
             }}
-            className="button"
+            className="rock-button"
           >
-            <div className={`burger ${isActive ? "burgerActive" : ""}`}></div>
+            <div className={`rock-burger ${isActive ? "rock-burgerActive" : ""}`}></div>
           </div>
         </div>
 

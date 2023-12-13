@@ -40,7 +40,7 @@ function App() {
   return (
     <>
     {/* <motion.div
-          className="mouseCursor"
+          className="rock-mouseCursor"
           style={{display: isHovered? 'none' : 'block'}}
           variants={MouseVariants}
           animate= 'default'

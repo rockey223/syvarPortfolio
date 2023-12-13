@@ -7,17 +7,17 @@ import { Element } from "react-scroll";
 const Services = ({ mouse }) => {
   return (
     <>
-    <Element id="Services" className="services" name="services">
+    <Element id="Services" className="rock-services" name="services">
 
-      <div className="services-heading">
-        <div className="services-left">
+      <div className="rock-services-heading">
+        <div className="rock-services-left">
           We provide the Best <span>Services</span>
         </div>
-        <div className="services-right">
+        <div className="rock-services-right">
         We create responsive websites and apps that look and work great on computers, tablets and mobile devices. We develop rich internet applications in iOS, Android and WindowWe create responsive websites and apps that look and work great on computers, tablets and mobile devices. 
         </div>
       </div>
-      <div className="gallary">
+      <div className="rock-gallary">
 
         {
           services.map((item,index)=>{

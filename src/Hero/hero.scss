@@ -1,15 +1,15 @@
-// masking.main{
-// .hero-main-container {
+// masking.rock-main{
+// .rock-hero-main-container {
 //   max-width: 100%;
 //   display: flex;
 //   justify-content: flex-start;
 //   align-items: center;
 // }
-// .main {
+// .rock-main {
 //   height: 100vh;
 //   max-width: 1440px;
-//   .mask,
-//   .body {
+//   .rock-mask,
+//   .rock-body {
 //     width: 100%;
 //     height: 100%;
 //     display: flex;
@@ -24,7 +24,7 @@
 //     cursor: default;
 //     gap: 0;
 
-//     .tagLine {
+//     .rock-tagLine {
 //       // color: var(--yellow);
 //       font-size: 20px;
 //       margin: 0;
@@ -37,11 +37,11 @@
 //     }
 //   }
 
-//   .mask {
-//     mask-image: url(../assets/mask.svg);
+//   .rock-mask {
+//     mask-image: url(.rock-.rock-/assets/mask.rock-svg);
 //     mask-repeat: no-repeat;
 //     mask-size: 40px;
-//     -webkit-mask-image: url(../assets/mask.svg);
+//     -webkit-mask-image: url(.rock-.rock-/assets/mask.rock-svg);
 //     -webkit-mask-repeat: no-repeat;
 
 //     -webkit-mask-size: 40px;
@@ -50,19 +50,19 @@
 //     color: black;
 //   }
 // }
-.hero-main-container {
+.rock-hero-main-container {
   max-width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.main {
+.rock-main {
   height: 100vh;
-  max-width: 1440px;
+  max-width: 1920px;
 
-  .mask,
-  .body {
+  .rock-mask,
+  .rock-body {
     width: 100%;
     height: 100%;
     display: flex;
@@ -77,24 +77,23 @@
     cursor: default;
     gap: 0;
 
-    .tagLine {
+    .rock-tagLine {
       // color: var(--yellow);
       font-size: 24px;
       margin: 0;
       padding: 0 0 0 40px;
+      line-height: 0;
     }
 
     p {
-      width: 1500px;
+      width: 1306px;
       padding: 40px;
     }
 
-    span {
-      color: #ec4e39;
-    }
+    
   }
 
-  .mask {
+  .rock-mask {
     mask-image: url(../assets/mask.svg);
     mask-repeat: no-repeat;
     mask-size: 40px;
@@ -109,9 +108,9 @@
 }
 
 @media only screen and (max-width: 1440px) {
-  .main {
-    .mask,
-    .body {
+  .rock-main {
+    .rock-mask,
+    .rock-body {
       font-size: 80px;
 
       p {
@@ -122,13 +121,13 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  .main {
-    .mask,
-    .body {
+  .rock-main {
+    .rock-mask,
+    .rock-body {
       font-size: 60px;
       padding-left: 0px;
-      line-height: 50px;
-
+      line-height: 70px;
+      
       p {
         width: 975px;
       }
@@ -137,13 +136,29 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .main {
-    .mask,
-    .body {
+  .rock-main {
+    .rock-mask,
+    .rock-body {
       font-size: 40px;
+      line-height: 50px;
 
       p {
-        width: 765px;
+        width: 715px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .rock-main {
+    .rock-mask,
+    .rock-body {
+      
+      p{
+        width: 450px;
+        text-wrap: balance;
+      }
+      .rock-tagLine{
+        line-height: 2;
       }
     }
   }

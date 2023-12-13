@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+  @import url('https://fonts.rock-googleapis.rock-com/css2?family=Work+Sans&display=swap');
 
 :root{
   --yellow: #ffb830;
@@ -20,7 +20,7 @@ body{
   background-color: var(--black);
 }
 
-.mouseCursor{
+.rock-mouseCursor{
   background-color: #ec4e39;
   height: 32px;
   width: 32px;

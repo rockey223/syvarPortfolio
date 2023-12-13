@@ -1,4 +1,4 @@
-.imageContainer {
+.rock-imageContainer {
   max-width: 876px;
   width: 100%;
   height: 512px;
@@ -56,10 +56,10 @@
       transform: rotate(360deg);
     }
   }
-  &:hover .topbox {
+  &:hover .rock-topbox {
     transform: translateY(-50px);
   }
-  .topbox {
+  .rock-topbox {
     height: 5px;
     width: 30px;
     background-color: var(--yellow);
@@ -70,7 +70,7 @@
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
   }
-  .content {
+  .rock-content {
     margin-top: 20px;
     z-index: 2;
     position: absolute;
@@ -79,7 +79,7 @@
     top: 40px;
     max-width: 1440px;
    
-    .content-top {
+    .rock-content-top {
       display: flex;
       width: 100%;
       gap: 10px;
@@ -90,7 +90,7 @@
       // margin: 20% 0;
       padding: 0px 20px 30px 20px;
       position: relative;
-      .number {
+      .rock-number {
         width: 45%;
         color: var(--yellow);
         /* Work Sans/26px: Medium */
@@ -100,7 +100,7 @@
         font-weight: 500;
         line-height: normal;
       }
-      .title {
+      .rock-title {
         width: 50%;
         color: var(--Brand-Color-Yellow, #ffb830);
         /* Work Sans/26px: Medium */
@@ -111,7 +111,7 @@
         line-height: normal;
       }
     }
-    .text-content {
+    .rock-text-content {
       display: flex;
       width: 100%;
       gap: 10px;
@@ -120,7 +120,7 @@
       height: 70%;
       // margin: 20% 0;
       padding: 30px 10px;
-      .left {
+      .rock-left {
         width: 45%;
         height: 50%;
         display: flex;
@@ -132,7 +132,7 @@
           object-fit: cover;
         }
       }
-      .right {
+      .rock-right {
         display: flex;
 
         width: 50%;
@@ -153,27 +153,27 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .imageContainer {
+  .rock-imageContainer {
     height: 550px;
-    .content {
-      .content-top {
+    .rock-content {
+      .rock-content-top {
         // flex-direction: column;
-        .number {
+        .rock-number {
           width: 10%;
         }
-        .title {
+        .rock-title {
           width: 100%;
         }
       }
-      .text-content {
+      .rock-text-content {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .left {
+        .rock-left {
           display: flex;
           width: 80%;
         }
-        .right {
+        .rock-right {
           width: 90%;
           p {
             width: 100%;
@@ -185,14 +185,14 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .imageContainer {
-    .content {
-      .content-top {
+  .rock-imageContainer {
+    .rock-content {
+      .rock-content-top {
         // flex-direction: column;
-        .number {
+        .rock-number {
           font-size: 18px;
         }
-        .title {
+        .rock-title {
           font-size: 18px;
         }
       }
