@@ -63,7 +63,7 @@
 
   .rock-mask,
   .rock-body {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -89,8 +89,6 @@
       width: 1306px;
       padding: 40px;
     }
-
-    
   }
 
   .rock-mask {
@@ -127,7 +125,7 @@
       font-size: 60px;
       padding-left: 0px;
       line-height: 70px;
-      
+
       p {
         width: 975px;
       }
@@ -150,14 +148,14 @@
 }
 @media only screen and (max-width: 600px) {
   .rock-main {
+    height: 85vh;
     .rock-mask,
     .rock-body {
-      
-      p{
-        width: 450px;
+      p {
+        width: 100vw;
         text-wrap: balance;
       }
-      .rock-tagLine{
+      .rock-tagLine {
         line-height: 2;
       }
     }

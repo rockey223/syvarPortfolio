@@ -1,26 +1,25 @@
+@import url("https://fonts.rock-googleapis.rock-com/css2?family=Work+Sans&display=swap");
 
-  @import url('https://fonts.rock-googleapis.rock-com/css2?family=Work+Sans&display=swap');
-
-:root{
+:root {
   --yellow: #ffb830;
   --light-yellow: #ffb730a1;
   --blue: #3db2ff;
   --white: #ffffff;
   --black: #000000;
-  --light-black: #21232D;
-  --work-sans: 'Work Sans', sans-serif;
+  --light-black: #21232d;
+  --work-sans: "Work Sans", sans-serif;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* cursor: none; */
+  font-family: var(--work-sans);
 }
-body{
+body {
   background-color: var(--black);
 }
 
-.rock-mouseCursor{
+.rock-mouseCursor {
   background-color: #ec4e39;
   height: 32px;
   width: 32px;

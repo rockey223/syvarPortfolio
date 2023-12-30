@@ -6,54 +6,29 @@ import Services from "./Services/Services";
 import { motion } from "framer-motion";
 import Hero from "./Hero/Hero";
 import Navbar from "./Navbar/Navbar";
+import SamyakPart1 from "./Samyak/SamyakPart1";
+import SamyakFooter from "./Samyak/SamyakFooter";
+
 function App() {
-  const [mPosition, setMPosition] = useState({
-    x: 0,
-    y: 0,
-  });
-
-  useEffect(() => {
-    const mouseMove = (e) => {
-      // console.log(e.clientX);
-      // console.log(e.clientY);
-      setMPosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mousemove", mouseMove);
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const MouseVariants = {
-    default: {
-      x: mPosition.x - 16,
-      y: mPosition.y - 16,
-
-     
-    }
-   
-  };
+  // const MouseVariants = {
+  //   default: {
+  //     x: mPosition.x - 16,
+  //     y: mPosition.y - 16,
+  //   },
+  // };
   return (
     <>
-    {/* <motion.div
+      {/* <motion.div
           className="rock-mouseCursor"
           style={{display: isHovered? 'none' : 'block'}}
           variants={MouseVariants}
           animate= 'default'
         /> */}
-    <Navbar/>
-      <Hero
-        mouse={mPosition}
-        setIsHovered={setIsHovered}
-        isHovered={isHovered}
-        
-      />
-      
-      <Services mouse={mPosition} />
+      <Navbar />
+      <Hero />
+      <SamyakPart1 />
+      <Services />
+      <SamyakFooter />
     </>
   );
 }
